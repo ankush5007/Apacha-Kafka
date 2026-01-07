@@ -10,7 +10,6 @@ docker exec -it <KAFKA_CONTAINER_NAME> kafka-topics --create --topic <TOPIC_NAME
 
 docker exec -it kafka-learn kafka-topics --create --topic basic-app-topic --bootstrap-server localhost:9092
 
-
 # Docker Basics 
     https://medium.com/@dmostoller/docker-why-its-important-and-how-it-s-used-in-real-world-configuration-07faccbf561e
 
