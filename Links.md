@@ -1,8 +1,20 @@
-https://medium.com/@AmolDamodar/mac-kafka-setup-with-docker-34142681cfd7
+# Image Stable version :6.2.0
+ https://medium.com/@AmolDamodar/mac-kafka-setup-with-docker-34142681cfd7
 
 
+# Docker Kafka Image version 7.0.1
+https://gist.github.com/erikkinding/975eb85a317ef8bfad9852225ece53f8
+
+
+# Kafka Node.js 
+https://medium.com/@dinubhagya97/connecting-apache-kafka-to-a-node-js-app-using-kafkajs-and-docker-c5376db360a8
 https://medium.com/@dinubhagya97/connecting-apache-kafka-to-a-node-js-app-using-kafkajs-and-docker-c5376db360a8
 
+
+
+
+# run yaml 
+    docker-compose up -d
 
 # creation
 docker exec -it <KAFKA_CONTAINER_NAME> kafka-topics --create --topic <TOPIC_NAME> --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
