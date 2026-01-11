@@ -31,6 +31,8 @@ https://l-lin.github.io/kafka/kafka-cheatsheet
 
     https://joydipnath.medium.com/kafka-producer-consumer-with-message-key-and-offset-e58dc23ae71b  ** God
 
+    https://www.datacamp.com/fr/tutorial/kafka-partitions
+    
     https://www.google.com/search?q=key+based+partitioning+kafka+understandings+&sca_esv=a891270acf4ea91d&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n5I_ukSr3N-PfDLZG2R_rNfOE47xw%3A1767826864921&ei=sOVeafmBOJCuseMPsKbhkA4&ved=0ahUKEwj5mbuixPqRAxUQV2wGHTBTGOIQ4dUDCBE&uact=5&oq=key+based+partitioning+kafka+understandings+&gs_lp=Egxnd3Mtd2l6LXNlcnAiLGtleSBiYXNlZCBwYXJ0aXRpb25pbmcga2Fma2EgdW5kZXJzdGFuZGluZ3MgSLIEUABYAHAAeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAA&sclient=gws-wiz-serp
 
     https://www.google.com/search?q=why+keys+are+used+in+partition+kafka&sca_esv=e1557db837a17fbc&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4Ms65R1VTTD8YXZGc65m6xon40kw%3A1767906753076&ei=wR1gaem6BLeeseMPi4C3-Qg&oq=why+keys+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXdoeSBrZXlzICoCCAAyBBAjGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIFEAAY7wVIsRxQwwdYwBRwA3gBkAEBmAHMAaAB-guqAQUwLjguMbgBA8gBAPgBAZgCC6ACvwzCAgoQABiwAxjWBBhHwgIKECMYgAQYJxiKBcICCxAAGIAEGJECGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQABiABBixA8ICDhAuGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQLhiABMICChAAGIAEGEMYigXCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGQBgiSBwUyLjcuMqAHmFqyBwUwLjYuMrgHkAvCBwsyLTQuNS4xLjAuMcgH7gGACAA&sclient=gws-wiz-serp
@@ -70,20 +72,30 @@ docker exec -it kafka-learn kafka-topics --bootstrap-server localhost:9092  --de
 # Send messages to the topic 
 docker exec -it broker  kafka-console-producer --topic Basic_topic --bootstrap-server localhost:9092 
 
-# Kafka Producer with key val based 
-docker exec -it broker  kafka-console-producer --topic key_based_topic --bootstrap-server localhost:9092 --property "parse.key=true" --property "key.separator=:"
+# Kafka Producer with key value based 
+docker exec -it broker  kafka-console-producer --topic customers_topic --bootstrap-server localhost:9092 --property "parse.key=true" --property "key.separator=:"
 
  --property "parse.key=true" --property "key.separator=:"
-
 
 
 # read message to the topic 
 docker exec -it broker kafka-console-consumer --topic AtmLogs --bootstrap-server localhost:9092 --from-beginning
 
 # read message to the Topic key value Based 
-docker exec -it broker kafka-console-consumer --topic AtmLogs --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property print.partition=true --property key.separator=":"
+docker exec -it broker kafka-console-consumer --topic customers_topic --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property print.partition=true --property key.separator=":"
 
 --property print.partition=true
+
+# Consumer group 
+docker exec -it broker kafka-console-consumer --topic customers_topic --bootstrap-server localhost:9092 --from-beginning --group customers_group
+
+# Describe Consumer group  
+docker exec -ti broker kafka-consumer-groups  --bootstrap-server localhost:9092  --group customers_group
+
+
+# reset offset consumer group 
+
+docker exec -ti broker kafka-consumer-groups  --bootstrap-server localhost:9092  --group customers_group --topic customers_topic  --reset-offsets --to-earliest --execute
 
 # Partition wise read messages 
 kafka-console-consumer.sh --bootstrap-server <broker_address> --topic <topic_name> --partition <partition_number> --from-beginning
