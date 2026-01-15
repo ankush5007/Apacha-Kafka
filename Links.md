@@ -6,6 +6,15 @@
 https://gist.github.com/erikkinding/975eb85a317ef8bfad9852225ece53f8
 
 
+# RMq vs Kafka Node.js [Understand considering ecommerce order solution ]
+  https://www.google.com/search?q=rabbitmq+vs+kafka+use+case&sca_esv=7cf98fb56e6d2ae8&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4hd6GggLBwpZyh_zySCEXzUvI26A%3A1768478278181&ei=RtZoacblCpPl4-EP18qR0AM&oq=rmq+vs+kafka+usecase&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHJtcSB2cyBrYWZrYSB1c2VjYXNlKgIIADIGEAAYFhgeMgsQABiABBiGAxiKBTIIEAAYgAQYogRIrjFQ3QVYiCtwBHgBkAEAmAG0BKABpiqqAQoyLTEyLjQuMS4xuAEDyAEA-AEBmAIWoAL9K8ICChAAGLADGNYEGEfCAgQQIxgnwgIKECMYgAQYJxiKBcICCxAAGIAEGJECGIoFwgIQEC4YgAQYQxjHARiKBRivAcICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICEBAuGIAEGLEDGEMYgwEYigXCAgoQABiABBgUGIcCwgIIEAAYgAQYsQPCAgUQABiABMICBxAAGIAEGArCAggQABgWGAoYHsICBRAhGKABwgIHECEYoAEYCsICBBAhGBWYAwCIBgGQBgiSBwo0LjAuMTIuNC4yoAfgc7IHCDItMTIuNC4yuAfDK8IHCjAuMy4xMi42LjHIB6oBgAgA&sclient=gws-wiz-serp
+
+
+
+# Kafks vs Database
+  https://www.google.com/search?q=does+kafka+is+a+database&rlz=1C5CHFA_enIN1059IN1059&oq=does+kafks+is+a+databae&gs_lcrp=EgZjaHJvbWUqCQgBECEYChigATIGCAAQRRg5MgkIARAhGAoYoAEyCQgCECEYChigATIJCAMQIRgKGKABMgkIBBAhGAoYoAEyBwgFECEYjwIyBwgGECEYjwLSAQg5Njg3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8
+
+
 # Kafka Node.js 
 https://medium.com/@dinubhagya97/connecting-apache-kafka-to-a-node-js-app-using-kafkajs-and-docker-c5376db360a8
 https://medium.com/@dinubhagya97/connecting-apache-kafka-to-a-node-js-app-using-kafkajs-and-docker-c5376db360a8
@@ -17,6 +26,7 @@ https://l-lin.github.io/kafka/kafka-cheatsheet
 # Kafka Partition Key Understandings [GOD]
     https://medium.com/@leela.kumili/the-power-of-kafka-keys-why-choosing-the-right-one-matters-adbe80785dc5
     
+    https://www.youtube.com/watch?v=V6l-oQeDdcI [IMP]
     https://www.google.com/search?q=kafka+key+understanding&rlz=1C5CHFA_enIN1059IN1059&oq=kafka+key+under&gs_lcrp=EgZjaHJvbWUqBwgBECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRifBTIHCAMQIRifBTIHCAQQIRifBdIBCDU4NDVqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8
 
     https://medium.com/@vinoji2005/exploring-apache-kafka-understanding-key-components-advantages-and-scenarios-af9f7e36fa99
@@ -37,9 +47,13 @@ https://l-lin.github.io/kafka/kafka-cheatsheet
 
     https://www.google.com/search?q=why+keys+are+used+in+partition+kafka&sca_esv=e1557db837a17fbc&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4Ms65R1VTTD8YXZGc65m6xon40kw%3A1767906753076&ei=wR1gaem6BLeeseMPi4C3-Qg&oq=why+keys+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXdoeSBrZXlzICoCCAAyBBAjGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIFEAAY7wVIsRxQwwdYwBRwA3gBkAEBmAHMAaAB-guqAQUwLjguMbgBA8gBAPgBAZgCC6ACvwzCAgoQABiwAxjWBBhHwgIKECMYgAQYJxiKBcICCxAAGIAEGJECGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAggQABiABBixA8ICDhAuGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgUQLhiABMICChAAGIAEGEMYigXCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIOEAAYgAQYsQMYgwEYigWYAwCIBgGQBgiSBwUyLjcuMqAHmFqyBwUwLjYuMrgHkAvCBwsyLTQuNS4xLjAuMcgH7gGACAA&sclient=gws-wiz-serp
 
-    https://www.google.com/search?q=why+keys+are+used+in+partition+kafka+real+life+examples&sca_esv=e1557db837a17fbc&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4HuwkPUkwMz451ZCyxjVdjaE2_9g%3A1767909790463&ei=nilgafyEHK-P4-EPlYXu8QY&oq=why+keys+are+used+in+partition+kafka+real+li&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHdoeSBrZXlzIGFyZSB1c2VkIGluIHBhcnRpdGlvbiBrYWZrYSByZWFsIGxpKgIIATIFECEYoAEyBRAhGKABMgUQIRigAUi4JFCaBViCHHADeAGQAQCYAfgBoAHKDqoBBTAuOC4yuAEDyAEA-AEBmAINoAL3D8ICChAAGLADGNYEGEfCAgUQIRifBZgDAIgGAZAGCJIHBTMuNi40oAfLPLIHBTAuNi40uAemD8IHCzAuMS45LjIuMC4xyAd2gAgA&sclient=gws-wiz-serp
+    https://www.google.com/search?q=why+keys+are+used+in+partition+kafka+real+life+examples&sca_esv=e1557db837a17fbc&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4HuwkPUkwMz451ZCyxjVdjaE2_9g%3A1767909790463&ei=nilgafyEHK-P4-EPlYXu8QY&oq=why+keys+are+used+in+partition+kafka+real+li&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHdoeSBrZXlzIGFyZSB1c2VkIGluIHBhcnRpdGlvbiBrYWZrYSByZWFsIGxpKgIIATIFECEYoAEyBRAhGKABMgUQIRigAUi4JFCaBViCHHADeAGQAQCYAfgBoAHKDqoBBTAuOC4yuAEDyAEA-AEBmAINoAL3D8ICChAAGLADGNYEGEfCAgUQIRifBZgDAIgGAZAGCJIHBTMuNi40oAfLPLIHBTAuNi40uAemD8IHCzAuMS45LjIuMC4xyAd2gAgA&sclient=gws-wiz-serp    [GOD]
 
     https://dev-aditya.medium.com/kafka-producer-key-management-patterns-pitfalls-and-best-practices-c159eb5bcf8f
+
+    https://www.google.com/search?q=why+we+need+key+in+partition+kafka+topic+usecase&sca_esv=e9a6b6505834f0c4&rlz=1C5CHFA_enIN1059IN1059&biw=1536&bih=742&aic=0&sxsrf=ANbL-n6-uxCQXR7Fkn_njczKcxjAxsjXfg%3A1768250758658&ei=hl1laab8J5-gnesPt5aZiQQ&ved=0ahUKEwim19-y74aSAxUfUGcHHTdLJkEQ4dUDCBE&uact=5&oq=why+we+need+key+in+partition+kafka+topic+usecase&gs_lp=Egxnd3Mtd2l6LXNlcnAiMHdoeSB3ZSBuZWVkIGtleSBpbiBwYXJ0aXRpb24ga2Fma2EgdG9waWMgdXNlY2FzZTIHECEYoAEYCjIHECEYoAEYCjIEECEYFUjVFVDxA1irDXABeAGQAQCYAZkCoAGoDaoBBTAuMy41uAEDyAEA-AEBmAIJoAKvDsICChAAGLADGNYEGEfCAgUQIRigAcICBRAhGJ8FwgIGECEYFRgNmAMAiAYBkAYIkgcHMS4yLjUuMaAHiTOyBwcwLjIuNS4xuAeHDsIHBzItNC40LjHIB1iACAA&sclient=gws-wiz-serp    [IMP]
+
+    https://www.google.com/search?q=why+we+need+key+in+partition+kafka+topic+explain+with+example&sca_esv=e9a6b6505834f0c4&rlz=1C5CHFA_enIN1059IN1059&biw=1536&bih=742&aic=0&sxsrf=ANbL-n5wFYah39L7pGWqs_IbahUBZenQwQ%3A1768250787670&ei=o11labHUKJWTseMPsarpsAY&oq=why+we+need+key+in+partition+kafka+topic+explain+with+&gs_lp=Egxnd3Mtd2l6LXNlcnAiNndoeSB3ZSBuZWVkIGtleSBpbiBwYXJ0aXRpb24ga2Fma2EgdG9waWMgZXhwbGFpbiB3aXRoICoCCAAyBRAhGKABMgUQIRigATIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwVIiSRQuQ5Yrx1wAHgDkAEAmAGSAqABwRWqAQYwLjEwLjS4AQPIAQD4AQGYAhCgArwWwgIEEAAYR8ICBBAjGCfCAggQABiABBiiBMICBBAhGBWYAwDiAwUSATEgQIgGAZAGCJIHBjIuMTAuNKAH-0qyBwYwLjEwLjS4B54WwgcIMC4xLjEzLjLIB0-ACAA&sclient=gws-wiz-serp [IMP]
 
 # run yaml 
     docker-compose up -d
@@ -72,25 +86,28 @@ docker exec -it kafka-learn kafka-topics --bootstrap-server localhost:9092  --de
 # Send messages to the topic 
 docker exec -it broker  kafka-console-producer --topic Basic_topic --bootstrap-server localhost:9092 
 
+
+
 # Kafka Producer with key value based 
-docker exec -it broker  kafka-console-producer --topic customers_topic --bootstrap-server localhost:9092 --property "parse.key=true" --property "key.separator=:"
+docker exec -it broker  kafka-console-producer --topic orders_topic --bootstrap-server localhost:9092 --property "parse.key=true" --property "key.separator=:"
 
  --property "parse.key=true" --property "key.separator=:"
 
+orders_topic
 
 # read message to the topic 
 docker exec -it broker kafka-console-consumer --topic AtmLogs --bootstrap-server localhost:9092 --from-beginning
 
 # read message to the Topic key value Based 
-docker exec -it broker kafka-console-consumer --topic customers_topic --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property print.partition=true --property key.separator=":"
+docker exec -it broker kafka-console-consumer --topic orders_topic --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property print.partition=true --property key.separator=":"
 
 --property print.partition=true
 
 # Consumer group 
-docker exec -it broker kafka-console-consumer --topic customers_topic --bootstrap-server localhost:9092 --from-beginning --group customers_group
+docker exec -it broker kafka-console-consumer --topic orders_topic --bootstrap-server localhost:9092 --from-beginning --group orders_group
 
 # Describe Consumer group  
-docker exec -ti broker kafka-consumer-groups  --bootstrap-server localhost:9092  --group customers_group
+docker exec -ti broker kafka-consumer-groups  --bootstrap-server localhost:9092 --describe --group customers_group
 
 
 # reset offset consumer group 

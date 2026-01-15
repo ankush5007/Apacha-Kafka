@@ -5,3 +5,16 @@
     https://medium.com/@ilakk2023/414-scalable-order-management-with-kafka-topic-strategy-partitioning-and-design-patterns-168d5600de26
 
     https://github.com/TravelXML/KAFKA
+
+
+    https://medium.com/@ogounaya/real-time-order-processing-in-e-commerce-with-kafka-react-and-node-js-b20ec816cc3c
+
+
+
+ # Bank Transaction with Kafka
+
+
+# ATM Fraud Detection with Kafka & KSQL
+# Stream Processing using Apache Kafka, KSQL & ElasticSearch
+https://medium.com/@deepeshn1988/fraud-detection-systems-a-second-look-a8f705624783
+
