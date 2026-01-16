@@ -1,33 +1,23 @@
-const { Kafka } = require("kafkajs");
+import KafkaConsumer from "./Kafka/KafkaConsumer.js"
+
 
 const topic_name = "Data-Stream"
+const group_id = "data-streaming-group"
 
-const kafka = new Kafka({
-    clientId: "Basic-app",
-    brokers: ["localhost:9092"]  // Broker Address
-})
-
-
-const consumer = kafka.consumer({ groupId: "data-streaming-group" });
-
-
-
-const runConsumer = async () => {
-    await consumer.connect()
-
-    consumer.subscribe({ topic: topic_name, fromBeginning: true })
-
-    await consumer.run({
-        eachMessage: async ({ topic_name, partition, message }) => {
-            console.log(" ---------------------------------")
-            console.log({
-                partition,
-                offset: message.offset,
-                value: message.value.toString(),
-            });
-            console.log(" ---------------------------------")
-        }
-    })
-    console.log("Consumer started successfully.")
+const ConsumeMessageToTopic = async() =>{
+  const consumer = new KafkaConsumer(topic_name,group_id)
+  consumer.Consume((topic,partition,offset,value) =>{
+    console.log("waitng for data to receive ...")
+    console.log(" -------------- Message --------------")
+  
+    console.log({
+        TopicName:topic,
+        Partition:partition,
+        offset: offset,
+        Response: value
+    });
+    console.log(" -------------- Message --------------")
+  })
 }
-runConsumer().catch(console.error)
+
+ConsumeMessageToTopic()

@@ -86,6 +86,11 @@ docker exec -it kafka-learn kafka-topics --bootstrap-server localhost:9092  --de
 # Send messages to the topic 
 docker exec -it broker  kafka-console-producer --topic Basic_topic --bootstrap-server localhost:9092 
 
+# Kafka Basics 
+  https://vivekbansal.substack.com/p/kafka-basics
+
+# Why Kafla is Fast 
+  https://www.google.com/search?q=why+kafka+is+fast&sca_esv=e4930b54a8b6c4ed&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n4TV3Y312i1qJv_aTaM9IggBghR7w%3A1768588608689&ei=QIVqaZ7lKceq4-EP5JLa6A0&oq=why+kafka+is+fast&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXdoeSBrYWZrYSBpcyBmYXN0KgIIATILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIFEAAY7wVIuBBQtQRY5gZwAngBkAEAmAGzAaABtQWqAQMwLjS4AQPIAQD4AQGYAgagAs4HwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigWYAwCIBgGQBgqSBwUxLjQuMaAHmByyBwMwLjS4B94FwgcJMi0xLjQuMC4xyAeNAYAIAA&sclient=gws-wiz-serp
 
 
 # Kafka Producer with key value based 

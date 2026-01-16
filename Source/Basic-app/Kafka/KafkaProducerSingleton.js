@@ -1,0 +1,5 @@
+/**
+ * Reference
+ * 
+ */
+https://www.google.com/search?q=singleton+kafka+producer+node.js+class+example&sca_esv=e4930b54a8b6c4ed&rlz=1C5CHFA_enIN1059IN1059&sxsrf=ANbL-n6PuLvga7mBnyAs93rZZbdfgeX6xQ%3A1768595482834&ei=GqBqaZDUMqG84-EPnPP64Ac&ved=0ahUKEwiQyYXM85CSAxUh3jgGHZy5HnwQ4dUDCBE&uact=5&oq=singleton+kafka+producer+node.js+class+example&gs_lp=Egxnd3Mtd2l6LXNlcnAiLnNpbmdsZXRvbiBrYWZrYSBwcm9kdWNlciBub2RlLmpzIGNsYXNzIGV4YW1wbGUyCBAAGKIEGIkFMggQABiiBBiJBTIFEAAY7wUyBRAAGO8FSMANUP0FWL8LcAF4AZABAJgB6AGgAfMIqgEFMC40LjK4AQPIAQD4AQGYAgOgAokDwgIKEAAYsAMY1gQYR8ICBxAjGLACGCfCAggQABiABBiiBJgDAIgGAZAGCJIHAzEuMqAHvCayBwMwLjK4B_YCwgcFMi0yLjHIBxmACAA&sclient=gws-wiz-serp
