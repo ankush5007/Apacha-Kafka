@@ -1,4 +1,4 @@
-import KafkaProducer from "./Kafka/KafkaProducer.js"
+import KafkaProducer from "./Kafka-Class/KafkaProducer.js"
 import { nanoid } from "nanoid"; 
 
 const topic_name = "Data-Stream"

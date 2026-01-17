@@ -1,4 +1,4 @@
-import KafkaConsumer from "./Kafka/KafkaConsumer.js"
+import KafkaConsumer from "./Kafka-Class/KafkaConsumer.js"
 
 
 const topic_name = "Data-Stream"
