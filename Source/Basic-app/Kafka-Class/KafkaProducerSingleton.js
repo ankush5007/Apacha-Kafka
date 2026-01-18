@@ -9,4 +9,8 @@ https://www.google.com/search?q=singleton+kafka+producer+node.js+class+example&s
 /**
  * make api call and check whether every time produce instance is created or not 
  * lets make tested   in previous files and go deep dive 
+ * When an built in module caching mechanisim provides a singleton type then why explicitly singleton is required [Point C]
+ * module.exports = new singleton then import in multiple files and set property random id Inside class if this gets changed means new instance created  make it practical too
+ *  [Point C]\
+ * Tey catch in class and constructuor
  */

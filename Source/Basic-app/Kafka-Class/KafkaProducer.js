@@ -3,23 +3,28 @@ import kafkaConfig from "./KafkaConfig.js"
 class KafkaProducer {
     
     constructor(Topic_Name){
+        console.log("KafkaProducer constructor gets called ...")
         this.Producer = kafkaConfig.producer()
+        console.log("Instance of Producer created ...")
         this.TopicName = Topic_Name
     }
 
     async Produce(Message){
+        //console.log("Produce methods gets called ...")
+        //console.log(Message)
         try{
             await this.Producer.connect()
-            console.log("Producer connected successfully ... ");
+            console.log("Producer instance connected with Broker successfully ...")
             await this.Producer.send({
                 topic:this.TopicName,
                 messages:[Message]
             })
-            return `Msg sent Successfully on ${this.TopicName} on Timestamp ${new Date().toLocaleString()}`
+            return 1
         }catch(error){
             console.log(error)
-        }finally{
+        }finally{ // cleanup
             await this.Producer.disconnect()
+            console.log("Producer disconnect successfully ...")
         }
     }
     async ProducerDisconnect(){
