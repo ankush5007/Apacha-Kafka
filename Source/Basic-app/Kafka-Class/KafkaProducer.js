@@ -10,8 +10,6 @@ class KafkaProducer {
     }
 
     async Produce(Message){
-        //console.log("Produce methods gets called ...")
-        //console.log(Message)
         try{
             await this.Producer.connect()
             console.log("Producer instance connected with Broker successfully ...")

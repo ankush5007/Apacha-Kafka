@@ -72,20 +72,6 @@ const sendMessageToTopic = async () => {
     let response = await producer.Produce({ key: "Data_key1", value: JSON.stringify({ msg: "Data-Stream is on work!!!", UniqueId: nanoid(), timestamp: new Date().toLocaleString() }) })
     if(response)  console.log(`Msg sent Successfully on ${topic_name} on Timestamp ${new Date().toLocaleString()}`)
   }, 3000)
-
-  // Handle Graceful Shut Down for SIGINt (Ctrl+C)
-  process.on('SIGINT', async () => {
-    console.log('Received SIGINT, shutting down...');
-    try {
-      await producer.ProducerDisconnect(); // Close connection
-      console.log('Producer disconnected gracefully ...');
-      process.exit(0); // Exit the process
-    } catch (error) {
-      console.error('Error during graceful shutdown:', error);
-      process.exit(1); // Exit with error code
-    }
-  });
-
 }
 
 sendMessageToTopic()
