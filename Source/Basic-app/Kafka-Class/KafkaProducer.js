@@ -19,7 +19,7 @@ class KafkaProducer {
             })
             return 1
         }catch(error){
-            console.log(error)
+            console.log(`Error while connecting ${error.messages}`)
         }finally{ // cleanup
             await this.Producer.disconnect()
             console.log("Producer disconnect successfully ...")

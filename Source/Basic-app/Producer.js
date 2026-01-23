@@ -71,9 +71,10 @@ const sendMessageToTopic = async () => {
   setInterval(async () => {
     let response = await producer.Produce({ key: "Data_key1", value: JSON.stringify({ msg: "Data-Stream is on work!!!", UniqueId: nanoid(), timestamp: new Date().toLocaleString() }) })
     if(response)  console.log(`Msg sent Successfully on ${topic_name} on Timestamp ${new Date().toLocaleString()}`)
-  }, 3000)
+  }, 1000)
 }
 
 sendMessageToTopic()
+
 
 
