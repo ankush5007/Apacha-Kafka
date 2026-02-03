@@ -2,7 +2,11 @@
  https://medium.com/@AmolDamodar/mac-kafka-setup-with-docker-34142681cfd7
 
 
-# Docker Kafka Image version 7.0.1
+
+# Kafka Basics
+  https://medium.com/techtrends-digest/a-complete-end-to-end-guide-to-apache-kafka-part-1-1010aab6d748
+
+# Docker Kafka Image version 7.0.1[Running]
 https://gist.github.com/erikkinding/975eb85a317ef8bfad9852225ece53f8
 
 
