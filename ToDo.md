@@ -7,3 +7,7 @@ https://www.google.com/search?q=backpressure+node.js+kafkajs+example&sca_esv=445
 - we need to understand how kafkajs consumer works before deep dive backpressure 
     - Suppose there are n number of messages in topic waiting for consumption 
     - While consuming all messages does it consume all messages at once aka take dump of all binary data in memory at once ot take in chunk agar yeh samajh gaye to backpressure bhi samajh jayenge!!!
+
+
+
+- Run Multiple consumers at once in one script
